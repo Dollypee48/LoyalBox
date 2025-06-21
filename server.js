@@ -21,6 +21,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Routes
+app.use("/", (req, res) => {
+  res.send("Hello Cohort 6")
+})
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 app.use('/user', userRoutes);
