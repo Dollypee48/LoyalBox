@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 // Routes
 app.use("/", (req, res) => {
-  res.send("Hello Cohort 6")
+  res.send()
 })
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
